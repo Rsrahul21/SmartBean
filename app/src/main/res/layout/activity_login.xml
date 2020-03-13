@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LoginActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolbar_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_80"
+                    android:layout_marginRight="@dimen/dp_25"
+                    android:text="@string/welcome_back"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/dp_20"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:layout_marginRight="@dimen/dp_25"
+                    android:layout_marginBottom="@dimen/dp_40"
+                    android:text="@string/sign_in"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/dp_15" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_60"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_10">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/ic_launcher"
+
+                        />
+
+
+                    <TextView
+                        android:id="@+id/txt_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageView2"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginTop="@dimen/dp_50"
+                        android:text="@string/username"
+                        android:textSize="@dimen/dp_16" />
+
+                    <EditText
+                        android:id="@+id/user_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_user"
+                        android:layout_marginRight="@dimen/dp_20" />
+
+                    <TextView
+                        android:id="@+id/txt_pass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/user_name"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginTop="@dimen/dp_16"
+                        android:text="@string/password"
+                        android:textSize="@dimen/dp_15" />
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_pass"
+                        android:layout_marginRight="@dimen/dp_20" />
+
+                    <Button
+                        android:id="@+id/btn_submit"
+                        android:layout_width="@dimen/button_width"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_below="@+id/password"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dp_60"
+                        android:background="@drawable/btn_background"
+                        android:gravity="center"
+                        android:text="@string/submit"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp_16"
+                        android:textStyle="bold"></Button>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/btn_submit"
+                        android:layout_marginTop="@dimen/dp_35"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/dont_have_account"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/btn_submit"
+                            android:gravity="center"
+                            android:text="@string/dont_have_account"
+                            android:textSize="@dimen/dp_15" />
+
+                        <TextView
+                            android:id="@+id/sign_up"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/btn_submit"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_toRightOf="@+id/dont_have_account"
+                            android:gravity="center"
+                            android:text="@string/sign_up"
+                            android:textSize="@dimen/dp_15" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

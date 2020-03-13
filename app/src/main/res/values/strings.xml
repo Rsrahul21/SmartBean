@@ -1,3 +1,39 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">SmartBean</string>
+
+    <!--welcome screen data -->
+    <string name="send_code_to_email">Send code to Email</string>
+    <string name="send_code_to_phone">Send code to Phone</string>
+    <string name="splash_screen_description">The code will confirm your identity and allow you to fully
+    login.Please contact support if you are not receiving codes</string>
+    <string name="welcome_to_smartbean">Welcome to SmartBean</string>
+    <string name="confirm_msg">To Confirm it\'s you, please request a verification code.</string>
+    <!--welcome screen data -->
+
+
+    <!--Login Screen Data -->
+    <string name="username">User Name</string>
+    <string name="password">Password</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="submit">Submit</string>
+    <string name="dont_have_account">Don\'t have an account  </string>
+    <string name="sign_up">Sign up?</string>
+    <string name="sign_in">Sign In</string>
+    <!--Login Screen Data -->
+
+    <!--Signup Screen Data -->
+    <string name="sign_up_1">Sign up</string>
+    <string name="create_account">Create Account</string>
+    <string name="email_id">Email Id</string>
+    <string name="phone">Phone Number</string>
+    <string name="already_account">Already have an account</string>
+    <string name="sign_in1">Sign In?</string>
+    <!--Signup Screen Data -->
+
+    <!--Verify Number Screen Data -->
+    <string name="phone_desc">Please enter your phone number to \n verify your account</string>
+    <string name="verify_number">Verify Your Number</string>
+    <string name="send">Send</string>
+
+    <!--Verify Number Screen Data -->
 </resources>

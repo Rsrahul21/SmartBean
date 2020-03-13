@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp_20"
+    tools:context=".Activity.WelcomeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_20"
+                android:padding="@dimen/dp_5">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:src="@mipmap/ic_launcher"
+
+                    />
+
+                <TextView
+                    android:id="@+id/welcome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView"
+                    android:layout_marginTop="@dimen/dp_25"
+                    android:gravity="center"
+                    android:text="@string/welcome_to_smartbean"
+                    android:textSize="@dimen/dp_25"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/welcome"
+                    android:layout_marginTop="21dp"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/confirm_msg"
+                    android:textSize="@dimen/dp_18" />
+
+                <Button
+                    android:id="@+id/btn_send_email"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_below="@+id/confirm"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp_35"
+                    android:background="@drawable/btn_background"
+                    android:gravity="center"
+                    android:text="@string/send_code_to_email"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_16"
+                    android:textStyle="bold"></Button>
+
+                <Button
+                    android:id="@+id/btn_send_code"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_below="@+id/btn_send_email"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:background="@drawable/btn_background"
+                    android:gravity="center"
+                    android:text="@string/send_code_to_phone"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_16"
+                    android:textStyle="bold"></Button>
+
+                <TextView
+                    android:id="@+id/confirm_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_send_code"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_20"
+                    android:text="@string/splash_screen_description"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
