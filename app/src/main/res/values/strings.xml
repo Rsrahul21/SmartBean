@@ -34,6 +34,18 @@
     <string name="phone_desc">Please enter your phone number to \n verify your account</string>
     <string name="verify_number">Verify Your Number</string>
     <string name="send">Send</string>
-
     <!--Verify Number Screen Data -->
+
+    <!--splash screen -->
+    <string name="skip">Skip</string>
+    <string name="app_desc">flat rate book keeping services give you piece of mind.</string>
+    <!--splash screen -->
+
+    <!--otp screen -->
+    <string name="two_factor_auth">Two Factor Authentication</string>
+    <string name="otp_screen_desc">The code will be sent to your phone.This \ncode will be valid for 15 minutes.</string>
+    <string name="resend">Resend (30)</string>
+    <string name="request_code">Request a new code</string>
+    <!--otp screen -->
+
 </resources>

@@ -9,19 +9,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.VerifyNumberActivity">
-
-        </activity>
-        <activity android:name=".Activity.SignUpActivity">
+        <activity android:name=".Activity.HomeActivity"></activity>
+        <activity android:name=".Activity.OtpActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity.LoginActivity"></activity>
-        <activity android:name=".Activity.WelcomeActivity" />
+        <activity android:name=".Activity.SplashActivity" />
+        <activity android:name=".Activity.VerifyNumberActivity" >
+
+        </activity>
+        <activity android:name=".Activity.SignUpActivity" >
+
+        </activity>
+        <activity android:name=".Activity.LoginActivity">
+
+        </activity>
+        <activity android:name=".Activity.WelcomeActivity">
+
+        </activity>
         <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

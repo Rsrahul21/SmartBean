@@ -27,7 +27,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="40dp"
-                    android:src="@mipmap/ic_launcher"
+                    android:src="@drawable/icon_2"
 
                     />
 
@@ -40,7 +40,9 @@
                     android:gravity="center"
                     android:text="@string/welcome_to_smartbean"
                     android:textSize="@dimen/dp_25"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    app:fontFamily="@font/poppins"
+                    android:textColor="@color/textcolor"/>
 
                 <TextView
                     android:id="@+id/confirm"
@@ -51,7 +53,9 @@
                     android:gravity="center"
                     android:padding="@dimen/dp_5"
                     android:text="@string/confirm_msg"
-                    android:textSize="@dimen/dp_18" />
+
+                    android:textSize="@dimen/dp_18"
+                     />
 
                 <Button
                     android:id="@+id/btn_send_email"
@@ -92,7 +96,8 @@
                     android:gravity="center"
                     android:padding="@dimen/dp_20"
                     android:text="@string/splash_screen_description"
-                    android:textSize="16dp" />
+                    android:textSize="16dp"
+                    app:fontFamily="@font/poppins"/>
             </RelativeLayout>
         </LinearLayout>
     </ScrollView>

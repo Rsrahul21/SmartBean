@@ -4,5 +4,11 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="white">#FDFDFD</color>
+    <color name="toolbar">#00A9B1</color>
+    <color name="textcolor">#F88D2B</color>
+    <color name="textcolor1">#414042</color>
+    <color name="textcolor2">#59595B</color>
+    <color name="otp_color">#59595B</color>
+
 
 </resources>

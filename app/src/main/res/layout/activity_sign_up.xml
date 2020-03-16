@@ -32,7 +32,8 @@
                     android:text="@string/create_account"
                     android:textColor="#ffffff"
                     android:textSize="@dimen/dp_20"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -42,7 +43,8 @@
                     android:layout_marginBottom="@dimen/dp_40"
                     android:text="@string/sign_up_1"
                     android:textColor="#ffffff"
-                    android:textSize="@dimen/dp_15" />
+                    android:textSize="@dimen/dp_15"
+                    android:fontFamily="@font/poppins"/>
             </LinearLayout>
         </androidx.appcompat.widget.Toolbar>
 
@@ -60,80 +62,101 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/dp_10">
+                    >
 
 
                     <ImageView
                         android:id="@+id/imageView2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@mipmap/ic_launcher" />
+                        android:layout_marginTop="@dimen/dp_25"
+                        app:srcCompat="@drawable/icon_2" />
 
                     <TextView
                         android:id="@+id/txt_user"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/imageView2"
-                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginLeft="@dimen/dp_35"
                         android:layout_marginTop="@dimen/dp_50"
                         android:text="@string/username"
-                        android:textSize="@dimen/dp_16" />
+                        android:textSize="@dimen/dp_16"
+                        android:textStyle="bold"
+                        android:textColor="@color/textcolor2"
+                        app:fontFamily="@font/poppins"/>
 
                     <EditText
                         android:id="@+id/user_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/txt_user"
-                        android:layout_marginRight="@dimen/dp_20" />
+                        android:layout_marginRight="@dimen/dp_30"
+                        android:layout_marginLeft="@dimen/dp_30"/>
 
                     <TextView
                         android:id="@+id/txt_pass"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/user_name"
-                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginLeft="@dimen/dp_35"
                         android:layout_marginTop="@dimen/dp_16"
+                        android:layout_marginRight="@dimen/dp_25"
                         android:text="@string/password"
-                        android:textSize="@dimen/dp_15" />
+                        android:textSize="@dimen/dp_15"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/poppins"
+                        android:textColor="@color/textcolor2"/>
 
                     <EditText
                         android:id="@+id/password"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/txt_pass"
-                        android:layout_marginRight="@dimen/dp_20" />
+                        android:layout_marginRight="@dimen/dp_30"
+                        android:layout_marginLeft="@dimen/dp_30"/>
                     <TextView
                         android:id="@+id/txt_email"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/password"
-                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginLeft="@dimen/dp_35"
+                        android:layout_marginRight="@dimen/dp_25"
                         android:layout_marginTop="@dimen/dp_16"
                         android:text="@string/email_id"
-                        android:textSize="@dimen/dp_15" />
+                        android:textSize="@dimen/dp_15"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/poppins"
+                        android:textColor="@color/textcolor2"/>
 
                     <EditText
                         android:id="@+id/et_email"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/txt_email"
-                        android:layout_marginRight="@dimen/dp_20" />
+                        android:layout_marginRight="@dimen/dp_30"
+                        android:layout_marginLeft="@dimen/dp_30"/>
                     <TextView
                         android:id="@+id/txt_phone"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/et_email"
-                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginLeft="@dimen/dp_35"
                         android:layout_marginTop="@dimen/dp_16"
                         android:text="@string/phone"
-                        android:textSize="@dimen/dp_15" />
+                        android:textSize="@dimen/dp_15"
+                        android:textStyle="bold"
+                        android:layout_marginRight="@dimen/dp_25"
+                        app:fontFamily="@font/poppins"/>
 
                     <EditText
                         android:id="@+id/et_phone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/txt_phone"
-                        android:layout_marginRight="@dimen/dp_20" />
+                        android:layout_marginRight="@dimen/dp_30"
+                        android:textColor="@color/textcolor2"
+                        app:fontFamily="@font/poppins"
+                        android:layout_marginLeft="@dimen/dp_30"/>
 
                     <Button
                         android:id="@+id/btn_submit"
@@ -166,7 +189,10 @@
                             android:layout_below="@+id/btn_submit"
                             android:gravity="center"
                             android:text="@string/already_account"
-                            android:textSize="@dimen/dp_15" />
+                            android:textSize="@dimen/dp_15"
+                            android:textStyle="bold"
+                            app:fontFamily="@font/poppins"
+                            android:textColor="@color/toolbar"/>
 
                         <TextView
                             android:id="@+id/sign_up"
@@ -178,6 +204,10 @@
                             android:gravity="center"
                             android:text="@string/sign_in1"
                             android:textSize="@dimen/dp_15"
+                            android:textColor="@color/textcolor"
+                            android:textStyle="bold"
+                            app:fontFamily="@font/poppins"
+
                            />
                     </LinearLayout>
                 </RelativeLayout>
